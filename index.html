@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark">
   <meta
     name="description"
-    content="PaperQC will be an open-source command-line toolkit and Nextflow pipeline for scientific paper quality checks."
+    content="PaperQC is an early-stage open-source project delivering a terminal toolkit for scientific paper quality checks."
   >
   <title>PaperQC - open-source paper quality checks</title>
   <link rel="icon" href="resources/favicon.png" type="image/png">
@@ -603,27 +603,27 @@
             <p class="eyebrow">Open-source research infrastructure</p>
             <h1>PaperQC</h1>
             <p class="lead">
-              PaperQC will be a downloadable quality-control toolkit for evaluating
-              scientific papers. It will run locally as a Python package and as
-              a Nextflow pipeline, helping researchers screen literature before
-              it becomes the basis for experiments, reviews or investment
-              decisions.
+              PaperQC is an early-stage open-source project. 
+              It is designed as a terminal toolkit with
+              a Python package and Nextflow pipeline to help
+              researchers screen literature before it becomes the basis for
+              experiments, reviews or investment decisions.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="#workflow">See planned workflow</a>
+              <a class="button primary" href="#workflow">See the workflow</a>
               <a class="button" href="#roadmap">Read the roadmap</a>
               <span class="button disabled" aria-disabled="true">GitHub coming soon</span>
             </div>
           </div>
 
-          <div class="terminal" aria-label="Planned PaperQC command-line interface">
+          <div class="terminal" aria-label="Prototype PaperQC command-line interface">
             <div class="terminal-bar">
               <div class="terminal-dots" aria-hidden="true">
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
-              <span>planned interface</span>
+              <span>prototype interface</span>
             </div>
             <pre><code><span class="comment"># Python package</span>
 <span class="prompt">$</span> pip install paperqc
@@ -646,32 +646,32 @@ citation_network.graphml</code></pre>
       <section class="section" id="checks">
         <div class="inner split">
           <div class="section-title">
-            <p class="eyebrow">What it will check</p>
+            <p class="eyebrow">What it checks</p>
             <h2>Quality signals for messy scientific literature.</h2>
             <p>
-              PaperQC will start with transparent metadata and citation checks,
-              then expand toward deeper content analysis as the project matures.
+              PaperQC starts with transparent metadata and citation checks,
+              then it will expand toward deeper content analysis as the project matures.
             </p>
           </div>
           <div class="feature-grid">
             <article class="feature">
               <h3>Bibliometric context</h3>
               <p>
-                It will summarize publication metadata, journal context,
+                It summarizes publication metadata, journal context,
                 citation patterns and unusual bibliographic signals.
               </p>
             </article>
             <article class="feature">
               <h3>Citation network risk</h3>
               <p>
-                It will flag retracted citations, clusters of suspiciously
+                It flags retracted citations, clusters of suspiciously
                 narrow citation behavior and excessive self-citation patterns.
               </p>
             </article>
             <article class="feature">
               <h3>Author and venue history</h3>
               <p>
-                It will surface retraction history, journal warnings and other
+                It surfaces retraction history, journal warnings and other
                 context.
               </p>
             </article>
@@ -689,7 +689,7 @@ citation_network.graphml</code></pre>
       <section class="section" id="workflow">
         <div class="inner split">
           <div class="section-title">
-            <p class="eyebrow">How it will work</p>
+            <p class="eyebrow">How it works</p>
             <h2>From paper identifier to reproducible report.</h2>
           </div>
           <div class="timeline">
@@ -698,7 +698,7 @@ citation_network.graphml</code></pre>
               <div>
                 <h3>Bring papers from existing tools</h3>
                 <p>
-                  Users will pass PDFs, RIS, BibTeX, DOI lists or metadata tables from
+                  Users pass PDFs, RIS, BibTeX, DOI lists or metadata tables from
                   literature searches, Zotero libraries and review workflows.
                 </p>
               </div>
@@ -708,7 +708,7 @@ citation_network.graphml</code></pre>
               <div>
                 <h3>Run locally</h3>
                 <p>
-                  PaperQC will be a Python package and Nextflow pipeline.
+                  PaperQC is a Python package and Nextflow pipeline.
                 </p>
               </div>
             </article>
@@ -717,8 +717,8 @@ citation_network.graphml</code></pre>
               <div>
                 <h3>Review ranked evidence, not ambiguous scores</h3>
                 <p>
-                  Outputs will include readable reports and machine-friendly
-                  tables that explain why each paper, citation or venue was
+                  Outputs include readable reports and machine-friendly
+                  tables that explain why each paper, citation or venue is
                   flagged.
                 </p>
               </div>
@@ -736,13 +736,13 @@ citation_network.graphml</code></pre>
             <p>
               Retractions, irreproducible studies and manipulated results can
               redirect whole fields long before corrections catch up. PaperQC
-              will help teams inspect that risk early, at the level of the paper
+              helps teams inspect that risk early, at the level of the paper
               collection they are about to trust.
             </p>
             <p>
-              The project will favor reproducibility over polish: local runs,
+              The project favors reproducibility over polish: local runs,
               open code, inspectable data outputs and documented assumptions.
-              The goal will be to support human judgment, not replace it.
+              The goal is to <i>support human judgment, not replace it</i>.
             </p>
           </div>
         </div>
@@ -755,7 +755,7 @@ citation_network.graphml</code></pre>
             <h2>A practical path to the first release.</h2>
             <p>
               PaperQC does not exist yet as a public package. The first release
-              will focus on dependable, explainable checks that can be extended
+              focuses on dependable, explainable checks that can be extended
               by the community.
             </p>
           </div>
@@ -765,8 +765,8 @@ citation_network.graphml</code></pre>
               <div>
                 <h3>Command-line prototype</h3>
                 <p>
-                  A Python package will parse paper collections, retrieve
-                  metadata and generate the first citation and bibliometric
+                  A Python package parses a singular paper, retrieves
+                  metadata and generates the first citation and bibliometric
                   quality reports.
                 </p>
               </div>
@@ -776,7 +776,7 @@ citation_network.graphml</code></pre>
               <div>
                 <h3>Pipeline-scale analysis</h3>
                 <p>
-                  A Nextflow workflow will make large literature screens
+                  A Nextflow workflow makes large literature screens
                   reproducible across laptops, servers and shared compute.
                 </p>
               </div>
@@ -786,7 +786,7 @@ citation_network.graphml</code></pre>
               <div>
                 <h3>Community modules</h3>
                 <p>
-                  The project will add modular checks for PubPeer signals,
+                  The project adds modular checks for PubPeer signals,
                   journal warnings, p-value patterns, figures and paper text.
                 </p>
               </div>
@@ -801,9 +801,8 @@ citation_network.graphml</code></pre>
             <p class="eyebrow">People</p>
             <h2>Built by scientists for scientists.</h2>
             <p>
-              The project will be shaped by researchers who understand how
-              literature quality affects experiments, reviews and funding
-              decisions.
+              The project is shaped by maintainers and researchers who understand how
+              literature quality affects experiments, reviews and funding decisions.
             </p>
           </div>
           <div class="team-grid">
@@ -835,7 +834,7 @@ citation_network.graphml</code></pre>
 
     <footer class="footer">
       <div class="inner">
-        <p>PaperQC will be released as an open-source terminal toolkit.</p>
+        <p>PaperQC is an early-stage open-source terminal toolkit.</p>
         <img class="logo-light" src="resources/inline_light.png" alt="PaperQC">
         <img class="logo-dark" src="resources/inline_dark.png" alt="PaperQC">
       </div>
